@@ -1,3 +1,39 @@
+// override Bootstrap variables
+$theme-colors: (
+    "primary": #5d9efc
+    "warning": #ff9f67
+);
+$font-size-base: .9rem; 
 // Bootstrap
 @import "vendor/bootstrap/scss/bootstrap.scss";
 
+
+body {
+    font-family: "Muli, Sans-Serif";
+}
+
+.icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: baseline;
+    &.icon-warning {
+        background-color: $warning;
+        color: #fff;
+    }
+    &.icon-lg {
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        font-size: 1rem;
+    }
+}

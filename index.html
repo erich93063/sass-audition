@@ -8,11 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="dist/audition.css">
-
+  <!-- Muli font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bd7f562592.js" crossorigin="anonymous"></script>
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="bg-light">
 
   <!-- Add your site or application content here -->
   <div class="container">
@@ -20,11 +24,14 @@
     <div class="row">
       <div class="col">
         <section>
-          <div>
-            <p>Great! Your registry is published and ready to be shared.</p>
-            <a href="/">Share</a>
-            <a href="/">Preview</a>
-            <a href="/">Edit</a>
+          <div class="d-lg-flex justify-content-center align-items-center text-center p-4 bg-white">
+            <div class="d-none d-lg-block mr-3"><span class="icon icon-warning icon-lg"><i class="fas fa-exclamation"></i></span></div>
+            <div class="d-none d-lg-block mr-3"><strong>You're almost there!</strong> <a href="/">Add payment settings</a> and you're ready to share.</div>
+            <div class="d-lg-none mr-3 mb-3"><strong>Great!</strong> Your registry is published and ready to be shared.</div>
+            <a class="btn btn-primary d-none d-lg-inline-block mr-md-3 px-5 py-3"  href="/">Add Payment</a>
+            <a class="btn btn-primary d-block d-md-inline-block d-lg-none mr-md-3 mb-3 mb-sm-3 mb-md-0 px-5 py-3" href="/">Share</a>
+            <a class="btn btn-outline-primary d-block d-md-inline-block mr-md-3 mb-3 mb-sm-3 mb-md-0 px-5 py-3" href="/">Preview</a>
+            <a class="btn btn-outline-primary d-block d-md-inline-block px-5 py-3" href="/">Edit</a>
           </div>
         </section>
       </div>
